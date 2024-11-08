@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.cc17_perezja_act7.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment">
+                <argument android:name="category" app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.cc17_perezja_act7.CategoryFragment"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_recommendationFragment"
+            app:destination="@id/recommendationFragment">
+                <argument android:name="placeName" app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/recommendationFragment"
+        android:name="com.example.cc17_perezja_act7.RecommendationFragment"
+        tools:layout="@layout/fragment_recommendation">
+        <argument
+            android:name="placeName"
+            app:argType="string" />
+        <argument
+            android:name="imageResId"
+            app:argType="integer" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </fragment>
+</navigation>

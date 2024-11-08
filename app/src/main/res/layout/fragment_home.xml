@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/title"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/coffeeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tryroboto3medium"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbg"
+            android:text="@string/catCoffee" />
+
+        <Button
+            android:id="@+id/mallButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbg"
+            android:text="@string/catMall"
+            android:fontFamily="@font/tryroboto3medium"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/parkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbg"
+            android:text="@string/catPark"
+            android:fontFamily="@font/tryroboto3medium"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/restButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbg"
+            android:text="@string/catRestaurant"
+            android:fontFamily="@font/tryroboto3medium"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/schoolButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbg"
+            android:text="@string/catSchool"
+            android:fontFamily="@font/tryroboto3medium"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</layout>

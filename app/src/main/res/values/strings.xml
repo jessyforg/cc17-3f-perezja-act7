@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">cc17-3f-perezja-act7</string>
+    <!-- Categories -->
+    <string name="catCoffee">Coffee Shops</string>
+    <string name="catMall">Malls</string>
+    <string name="catPark">Parks</string>
+    <string name="catSchool">Schools</string>
+    <string name="catRestaurant">Restaurant</string>
+    <string name="title">All About Baguio City</string>
+
+</resources>
